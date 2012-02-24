@@ -272,7 +272,7 @@ public class CommandLineRunner extends
 
     @Option(name = "--compilation_level",
         usage = "Specifies the compilation level to use. Options: " +
-        "WHITESPACE_ONLY, SIMPLE_OPTIMIZATIONS, ADVANCED_OPTIMIZATIONS")
+        "WHITESPACE_ONLY, SIMPLE_OPTIMIZATIONS, ADVANCED_OPTIMIZATIONS, SUPER_OPTIMIZATIONS")
     private CompilationLevel compilation_level =
         CompilationLevel.SIMPLE_OPTIMIZATIONS;
 
