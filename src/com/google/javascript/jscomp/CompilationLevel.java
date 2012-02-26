@@ -186,7 +186,9 @@ public enum CompilationLevel {
     // Enable as much checking as we can.
     options.aggressiveVarCheck = CheckLevel.ERROR;
     options.ambiguateProperties = true;
-    options.setTightenTypes(true);
+
+    // todo: this is broken, throws ICE
+    // options.setTightenTypes(true);
 
     options.checkControlStructures = true;
     options.checkGlobalNamesLevel = CheckLevel.ERROR;
@@ -195,7 +197,9 @@ public enum CompilationLevel {
     options.checkSymbols = true;
     options.checkTypes = true;
     options.checkUnreachableCode = CheckLevel.ERROR;
-    options.reportMissingOverride = CheckLevel.ERROR;
+
+    // todo: this is busted, reports missing overrides in externs
+    // options.reportMissingOverride = CheckLevel.ERROR;
     
     // Remove unused vars also removes unused functions.
     options.removeUnusedVars = true;
